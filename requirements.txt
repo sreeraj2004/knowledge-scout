@@ -6,7 +6,7 @@ python-multipart==0.0.6
 aiofiles==23.2.1
 
 # LangChain ecosystem
-langchain==0.3.8
+langchain==0.1.56
 langchain-groq==0.3.8
 langchain-community==0.0.10
 langchain-huggingface==0.0.1
