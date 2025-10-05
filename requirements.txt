@@ -7,8 +7,9 @@ langchain==0.1.0
 langchain-groq
 langchain-community==0.0.10
 langchain-huggingface==0.0.1
-faiss-cpu==1.7.4
+faiss-cpu==1.12.0
 transformers==4.35.2
 sentence-transformers==2.2.2
 pypdf==3.17.0
-torch==2.1.0 --index-url https://download.pytorch.org/whl/cpu  # CPU-only to save RAM
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.1.0+cpu
