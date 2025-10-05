@@ -4,7 +4,7 @@ python-dotenv==1.0.0
 python-multipart==0.0.6
 aiofiles==23.2.1
 langchain==0.1.0
-langchain-groq==0.0.4
+langchain-groq
 langchain-community==0.0.10
 langchain-huggingface==0.0.1
 faiss-cpu==1.7.4
