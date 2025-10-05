@@ -3,7 +3,11 @@
   "builds": [
     {
       "src": "main.py",
-      "use": "@vercel/python"
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "50mb",
+        "installCommand": "uv pip install --system -r requirements.txt --no-cache-dir"
+      }
     }
   ],
   "routes": [
@@ -11,5 +15,13 @@
       "src": "/(.*)",
       "dest": "main.py"
     }
-  ]
+  ],
+  "functions": {
+    "main.py": {
+      "runtime": "python3.11", 
+      "memory": 1024, 
+      "maxDuration": 30
+    }
+  },
+  "installCommand": "uv pip install --system -r requirements.txt --no-cache-dir"
 }

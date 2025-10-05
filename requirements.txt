@@ -1,13 +1,14 @@
-fastapi
-uvicorn[standard]
-python-dotenv
-python-multipart
-aiofiles
-langchain
-langchain-groq
-langchain-community
-langchain-huggingface
-faiss-cpu
-transformers
-sentence-transformers
-pypdf
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-dotenv==1.0.0
+python-multipart==0.0.6
+aiofiles==23.2.1
+langchain==0.1.0
+langchain-groq==0.0.4
+langchain-community==0.0.10
+langchain-huggingface==0.0.1
+faiss-cpu==1.7.4
+transformers==4.35.2
+sentence-transformers==2.2.2
+pypdf==3.17.0
+torch==2.1.0 --index-url https://download.pytorch.org/whl/cpu  # CPU-only to save RAM
